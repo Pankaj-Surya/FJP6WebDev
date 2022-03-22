@@ -1,6 +1,6 @@
 // read content of unorganised folder and make  an array which has extension name of each file
 
-// unorganize folder read --> ext name extract in an array
+//SOl:: unorganize folder read --> ext name extract in an array
 
 let fs=require('fs');
 let path=require('path');
