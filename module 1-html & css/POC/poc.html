@@ -21,7 +21,19 @@
         }
         .vh-vw{
             width: 70vw;
-            height: 13vh;
+            height: 100vh;
+            background-color: black;
+        }
+        .child{
+            height: 50%;
+            background-color: blueviolet;
+            width: 40%;
+        }
+        .display{
+
+        }
+        .display span{
+            border: 1px solid brown;
         }
     </style>
 </head>
@@ -54,7 +66,8 @@
         2.3 vh  => screen size Height (Ex. Images) 
         2.4 vw  => screen size width (resize screen)
         2.5 % 
-        2.6
+        
+        Note: vh vw % ==> multiple of parent elemnt
      -->
      <hr>
      <div class="px" style="font-size: 32px;">px</div>
@@ -63,8 +76,23 @@
        <p>I am para</p>
       </div>
       <div class="vh-vw">
-          <input type="text">
+          <div class="child"></div>
+          <!-- <input type="text"> -->
       </div>
 
+      <!-- Display -->
+      <!-- Types
+           1. inline =>element take space that require. ex span
+           Note: inline , we cant set height and width
+           2. block  => fully occpy width so next content on next line  ex h1, p
+           3. inline-block => inline feature with we can set height width  Ex button
+           4. flex -->
+
+           <div class="display">
+               <input id="ip" type="">
+                <button id="btn">Submit</button>
+                <span> I am Span</span>
+                <span>I am Spammm</span>
+            </div>
 </body>
 </html>
